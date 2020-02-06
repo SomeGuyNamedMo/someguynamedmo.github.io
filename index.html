@@ -1,18 +1,24 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+		* { margin: 0; padding: 0; }
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+		html {
+			background: url(images/wallpaper1.png) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+		#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+	   </style>
+    <meta charset="utf-8">
+    <title>Coming soon</title>
+  </head>
+  <body>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  </body>
+</html>
